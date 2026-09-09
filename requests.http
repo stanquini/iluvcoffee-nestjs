@@ -1,0 +1,35 @@
+###
+GET http://localhost:3000/coffees/falvors
+
+###
+GET http://localhost:3000/coffees/1
+
+
+###
+GET http://localhost:3000/coffees?limit=10&offset=20
+
+###
+POST http://localhost:3000/coffees
+Content-Type: application/json
+
+{
+  "name": "Cappuccino",
+  "brand": "Starbucks",
+  "flavors": ["chocolate", "vanilla"]
+}
+
+###
+PATCH http://localhost:3000/coffees/123
+Content-Type: application/json
+
+{
+  "name": "Express",
+  "brand": "Starbucks",
+  "flavors": ["coffee"]
+} 
+
+
+###
+DELETE http://localhost:3000/coffees/1
+
+
