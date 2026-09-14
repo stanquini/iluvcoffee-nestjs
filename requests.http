@@ -1,8 +1,8 @@
 ###
-GET http://localhost:3000/coffees/falvors
+GET http://localhost:3000/coffees?offset=1&limit=1
 
 ###
-GET http://localhost:3000/coffees/1
+GET http://localhost:3000/coffees/2
 
 
 ###
@@ -14,18 +14,16 @@ Content-Type: application/json
 
 {
   "name": "Cappuccino",
-  "brand": "Starbucks",
-  "flavors": ["chocolate", "vanilla"]
+  "brand": "3 coracoes",
+  "flavors": ["café", "leite", "chocolate"]
 }
 
 ###
-PATCH http://localhost:3000/coffees/123
+PATCH http://localhost:3000/coffees/2
 Content-Type: application/json
 
 {
-  "name": "Express",
-  "brand": "Starbucks",
-  "flavors": ["coffee"]
+  "name": "Express"
 } 
 
 
